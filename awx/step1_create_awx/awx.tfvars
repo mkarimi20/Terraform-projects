@@ -6,4 +6,4 @@ user			=	"ec2-user"
 ssh_key_location	=	"~/ssh_keys/app_rsa"       #Import pub key pair to aws as "terraform"
 zone_id			=	"ZK295Y7C4PSZD"	   #Add hosted DNS zone ID here
 domain			=	"elb-class.com"
-region = "eu-east-2"
+region = "us-east-2"
