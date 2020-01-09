@@ -1,5 +1,5 @@
 resource "aws_route53_record" "tower" {
-  zone_id = "${var.zone_id}"
+  zone_id = "${var.zone_id"
   name    = "tower.${var.domain}"   
   type    = "A"
   ttl     = "60"
