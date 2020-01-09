@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "awx" {
-  instance_type               = var.instance_type
-  ami                         = var.ami
-  key_name                    = var.key_name
+  instance_type               = "${var.instance_type}"
+  ami                         = "${var.ami}"
+  key_name                    = "${var.key_name}"
   associate_public_ip_address = "true"
   security_groups             = ["allow_ssh_and_awx"]
 

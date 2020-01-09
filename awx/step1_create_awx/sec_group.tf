@@ -1,7 +1,8 @@
 resource "aws_security_group" "allow_ssh_and_awx" {
+resource "aws_security_group" "allow_ssh_and_awx" {
   name        = "allow_ssh_and_awx"
   description = "Allow SSH and awx"
-  vpc_id      = var.vpc_id
+  vpc_id      = "${var.vpc_id}"
 
   ingress {
     from_port   = 22
