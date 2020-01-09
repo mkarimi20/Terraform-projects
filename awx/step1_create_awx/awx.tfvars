@@ -1,6 +1,6 @@
 instance_type		=	"t2.medium"
 key_name		=	"app-rsa"
-ami			=	"ami-02ccb28830b645a41"    #Use Centos7  image
+ami = "ami-02ccb28830b645a41"    #Use Centos7  image
 vpc_id			=	"vpc-906f9ffb"
 user			=	"ec2-user"
 ssh_key_location	=	"~/ssh_keys/app_rsa"       #Import pub key pair to aws as "terraform"
