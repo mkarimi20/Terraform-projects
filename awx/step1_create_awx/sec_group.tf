@@ -1,5 +1,4 @@
 resource "aws_security_group" "allow_ssh_and_awx" {
-resource "aws_security_group" "allow_ssh_and_awx" {
   name        = "allow_ssh_and_awx"
   description = "Allow SSH and awx"
   vpc_id      = "${var.vpc_id}"
@@ -22,5 +21,5 @@ resource "aws_security_group" "allow_ssh_and_awx" {
     to_port     = 65535
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    }
+  }
 }
