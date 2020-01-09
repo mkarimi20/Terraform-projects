@@ -1,9 +1,9 @@
 instance_type		=	"t2.medium"
 key_name		=	"app-rsa"
-ami			=	"ami-0ff760d16d9497662"    #Use Centos7  image
+ami			=	"ami-e1496384"    #Use Centos7  image
 vpc_id			=	"vpc-906f9ffb"
-user			=	"ec2-user"
+user			=	"centos"
 ssh_key_location	=	"~/ssh_keys/app_rsa"       #Import pub key pair to aws as "terraform"
 zone_id			=	"ZK295Y7C4PSZD"	   #Add hosted DNS zone ID here
-domain			=	"elb-class.com.com"
+domain			=	"elb-class.com"
 region = "eu-east-2"
